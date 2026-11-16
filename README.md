@@ -7,7 +7,8 @@
 [![Testing](https://img.shields.io/badge/Testing-xUnit%20%2B%20Moq%20(%E2%89%A550%25)-orange?style=flat&logo=testinglibrary)](https://xunit.net/)
 [![Container](https://img.shields.io/badge/DevOps-Docker%20Compose-2496ED?style=flat&logo=docker)](https://www.docker.com/)
 
-> **Đồ án môn học:** IN4309N04 LẬP TRÌNH WEB ASPX > **Đơn vị đào tạo:** Khoa Công nghệ và Kỹ thuật / Khoa Sư phạm Công nghệ và kỹ thuật — Trường Đại học Đồng Tháp.  
+> **Đồ án môn học:** IN4309N04 Lập trình Web ASPX 
+> **Đơn vị đào tạo:** Khoa Công nghệ và Kỹ thuật — Trường Đại học Đồng Tháp.  
 > **Giảng viên hướng dẫn:** ThS. Trần Kim Hương  
 > **Nhóm thực hiện:** Nhóm 03 — Lớp ĐHCNTT24B-IT  
 
@@ -197,10 +198,10 @@ $$\text{<type>(<scope>): <mô tả ngắn bằng tiếng Anh hoặc tiếng Vi�
 
 | STT | Mã số SV | Họ và tên | Vai trò | Phân hệ phụ trách chính |
 | :-: | :---: | :--- | :---: | :--- |
-| **1** | `002xxxxxxx` | **Nguyễn Văn A** *(Trưởng nhóm)* | Backend Lead | Dựng Clean Architecture, Xác thực JWT + Argon2id, EF Core Migrations, Quản trị Admin Dashboard |
+| **1** | `0024417329` | **Nguyễn Huỳnh Phúc Thịnh** *(Trưởng nhóm)* | Backend Lead | Dựng Clean Architecture, Xác thực JWT + Argon2id, EF Core Migrations, Quản trị Admin Dashboard, Nghiệp vụ Giỏ hàng, Đặt hàng Flash Sale, Tích hợp thanh toán, Unit Test xUnit/Moq và Docker |
 | **2** | `002xxxxxxx` | **Trần Thị B** | Frontend & UX | Dựng Master Layout, Giao diện Responsive Bootstrap 5, Danh mục OCOP & Chi tiết sản phẩm, Bộ lọc tìm kiếm |
-| **3** | `002xxxxxxx` | **Lê Văn C** | Full-Stack & Testing | Nghiệp vụ Giỏ hàng, Đặt hàng Flash Sale, Tích hợp thanh toán, Unit Test xUnit/Moq và Docker |
-
+| **3** | `0024417853` | **Nguyễn Thành Lộc** | Testing | Hoàn thành tài liệu báo cáo: Tổng hợp phụ lục mã nguồn Word, kịch bản test và video demo. |
+| **4** | `0024419329` | **Phan Thanh Phú** | Testing | Hoàn thành tài liệu báo cáo: Thiết kế Slide PowerPoint báo cáo và kịch bản thuyết trình. |
 ---
 
 ## 📜 9. BẢN QUYỀN (LICENSE)
