@@ -178,7 +178,7 @@ dotnet test --collect:"XPlat Code Coverage"
 Theo quy định học phần **IN4211**, nhóm tuân thủ nghiêm ngặt chuẩn **Conventional Commits**:
 
 ### 7.1. Cấu trúc Commit Message:
-$$\text{<type>(<scope>): <mô tả ngắn bằng tiếng Anh hoặc tiếng Việt không dấu>}$$
+<type>(<scope>): <moˆ tả nga˘ˊn ba˘ˋng tieˆˊng Anh hoặc tieˆˊng Việt khoˆng daˆˊu>
 
 - `feat:` Thêm tính năng mới (Ví dụ: `feat(auth): integrate argon2id password hasher`)
 - `fix:` Sửa lỗi (Ví dụ: `fix(order): prevent overselling race condition in flash sale`)
