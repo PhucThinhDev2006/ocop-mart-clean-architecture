@@ -113,7 +113,7 @@ Hệ thống được thiết kế chuẩn hóa bậc 3 (3NF) gồm **12 bảng 
 
 #### Bước 1: Clone Repository về máy
 ```bash
-git clone https://github.com/<tai-khoan-nhom>/dongthap-agrimart-web.git
+git clone https://github.com/PhucThinhDev2006/https://github.com/PhucThinhDev2006/ocop-mart-clean-architecture.git
 cd dongthap-agrimart-web
 ```
 
@@ -175,7 +175,7 @@ dotnet test --collect:"XPlat Code Coverage"
 
 ## 🌿 7. QUY CHUẨN ĐÓNG GÓP CODE (GIT & PULL REQUEST WORKFLOW)
 
-Theo quy định học phần **IN4211**, nhóm tuân thủ nghiêm ngặt chuẩn **Conventional Commits**:
+Theo quy định học phần **IN4309N04**, nhóm tuân thủ nghiêm ngặt chuẩn **Conventional Commits**:
 
 ### 7.1. Cấu trúc Commit Message:
 
