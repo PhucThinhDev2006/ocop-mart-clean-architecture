@@ -7,10 +7,9 @@
 [![Testing](https://img.shields.io/badge/Testing-xUnit%20%2B%20Moq%20(%E2%89%A550%25)-orange?style=flat&logo=testinglibrary)](https://xunit.net/)
 [![Container](https://img.shields.io/badge/DevOps-Docker%20Compose-2496ED?style=flat&logo=docker)](https://www.docker.com/)
 
-> **Đồ án môn học:** LẬP TRÌNH WEB ASPX & PHÁT TRIỂN PHẦN MỀM HƯỚNG ĐỐI TƯỢNG (IN4211)  
-> **Đơn vị đào tạo:** Khoa Công nghệ và Kỹ thuật / Khoa Sư phạm Toán - Tin — Trường Đại học Đồng Tháp (DTHU)  
-> **Giảng viên hướng dẫn:** ThS. Nguyễn Tuấn Kiệt & ThS. Trần Kim Hương  
-> **Nhóm thực hiện:** Nhóm 02 — Lớp ĐHCNTT  
+> **Đồ án môn học:** IN4309N04 LẬP TRÌNH WEB ASPX > **Đơn vị đào tạo:** Khoa Công nghệ và Kỹ thuật / Khoa Sư phạm Công nghệ và kỹ thuật — Trường Đại học Đồng Tháp.  
+> **Giảng viên hướng dẫn:** ThS. Trần Kim Hương  
+> **Nhóm thực hiện:** Nhóm 03 — Lớp ĐHCNTT24B-IT  
 
 ---
 
