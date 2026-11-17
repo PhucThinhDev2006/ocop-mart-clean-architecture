@@ -201,8 +201,8 @@ Theo quy định học phần **IN4309N04**, nhóm tuân thủ nghiêm ngặt ch
 
 | STT | Mã số SV | Họ và tên | Vai trò | Phân hệ phụ trách chính |
 | :-: | :---: | :--- | :---: | :--- |
-| **1** | `0024417329` | **Nguyễn Huỳnh Phúc Thịnh** *(Trưởng nhóm)* | Backend Lead | Dựng Clean Architecture, Xác thực JWT + Argon2id, EF Core Migrations, Quản trị Admin Dashboard, Nghiệp vụ Giỏ hàng, Đặt hàng Flash Sale, Tích hợp thanh toán, Unit Test xUnit/Moq và Docker |
-| **2** | `002xxxxxxx` | **Trần Thị B** | Frontend & UX | Dựng Master Layout, Giao diện Responsive Bootstrap 5, Danh mục OCOP & Chi tiết sản phẩm, Bộ lọc tìm kiếm |
+| **1** | `0024417329` | **Nguyễn Huỳnh Phúc Thịnh** *(Leader)* | Backend Lead & Leader | Dựng Clean Architecture, Xác thực JWT + Argon2id, EF Core Migrations, Quản trị Admin Dashboard, Nghiệp vụ Giỏ hàng, Đặt hàng Flash Sale, Tích hợp thanh toán, Unit Test xUnit/Moq và Docker |
+| **2** | `0024416442` | **Phạm Quốc Bảo** | Frontend & UX | Dựng Master Layout, Giao diện Responsive Bootstrap 5, Danh mục OCOP & Chi tiết sản phẩm, Bộ lọc tìm kiếm |
 | **3** | `0024417853` | **Nguyễn Thành Lộc** | Testing | Hoàn thành tài liệu báo cáo: Tổng hợp phụ lục mã nguồn Word, kịch bản test và video demo. |
 | **4** | `0024419329` | **Phan Thanh Phú** | Testing | Hoàn thành tài liệu báo cáo: Thiết kế Slide PowerPoint báo cáo và kịch bản thuyết trình. |
 ---
