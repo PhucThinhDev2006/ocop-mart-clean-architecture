@@ -1,4 +1,4 @@
-# 🌾 OcopMart — Sàn Nông Sản & Đặc Sản Vùng Miền Chuẩn OCOP Đồng Tháp
+# 🌾 OcopMart — Xây Dựng Website Kinh Doanh Nông Sản & Đặc Sản Vùng Miền Trên Chuẩn OCOP 3 Miền
 
 [![.NET Version](https://img.shields.io/badge/.NET-10.0%20%2F%208.0-purple?style=flat&logo=dotnet)](https://dotnet.microsoft.com/)
 [![React](https://img.shields.io/badge/FrontEnd-React%2019%20%2B%20Vite-61DAFB?style=flat&logo=react)](https://react.dev/)
@@ -8,6 +8,7 @@
 [![Testing](https://img.shields.io/badge/Testing-xUnit%20%2B%20Moq%20(%E2%89%A550%25)-orange?style=flat&logo=testinglibrary)](https://xunit.net/)
 [![Container](https://img.shields.io/badge/DevOps-Docker%20Compose-2496ED?style=flat&logo=docker)](https://www.docker.com/)
 
+> **Tên đề tài:** Xây dựng Website kinh doanh nông sản và đặc sản vùng miền trên chuẩn OCOP 3 miền  
 > **Đồ án môn học:** IN4309N04 — Lập trình Web ASPX  
 > **Đơn vị đào tạo:** Khoa Công nghệ và Kỹ thuật — Trường Đại học Đồng Tháp  
 > **Giảng viên hướng dẫn:** ThS. Trần Kim Hương  
@@ -28,14 +29,17 @@
 
 ## 📖 1. GIỚI THIỆU ĐỀ TÀI
 
-**OcopMart (DongThap AgriMart)** là nền tảng thương mại điện tử chuyên biệt phục vụ chuyển đổi số trong chuỗi cung ứng nông sản sạch và đặc sản truyền thống của tỉnh Đồng Tháp cũng như các vùng miền trên cả nước. 
+**OcopMart** là nền tảng thương mại điện tử chuyên biệt phục vụ chuyển đổi số trong chuỗi cung ứng nông sản sạch và đặc sản truyền thống **trên chuẩn OCOP 3 miền (Bắc — Trung — Nam)**, kết nối trực tiếp các Hợp tác xã, nhà vườn uy tín đến tay người tiêu dùng cả nước. 
 
-Hệ thống được xây dựng nhằm tôn vinh và phân phối các sản phẩm đạt chuẩn **OCOP (Mỗi xã một sản phẩm từ 3 đến 5 sao)**, tiêu chuẩn **VietGAP** và **Hữu cơ (Organic)** như: *Sen Tháp Mười, Nem Lai Vung, Xoài cát Chu Cao Lãnh, Quýt hồng Lai Vung, Gạo Huyết Rồng...*
+Hệ thống được xây dựng nhằm tôn vinh, số hóa và phân phối các sản phẩm đạt chuẩn **OCOP (Mỗi xã một sản phẩm từ 3 đến 5 sao)**, tiêu chuẩn **VietGAP** và **Hữu cơ (Organic)** từ các vùng miền trọng điểm:
+- **Đặc sản Miền Tây & Đồng Tháp:** *Sen Tháp Mười, Nem Lai Vung, Xoài cát Chu Cao Lãnh, Quýt hồng Lai Vung, Gạo Huyết Rồng...*
+- **Đặc sản Miền Đông & Tây Nguyên:** *Cà phê Buôn Ma Thuột, Tiêu Chư Sê, Bơ sáp Đắk Lắk, Mật ong hoa cà phê...*
+- **Đặc sản Miền Trung:** *Tỏi Lý Sơn, Mè xửng Huế, Yến sào Khánh Hòa, Nước mắm Phan Thiết...*
+- **Đặc sản Miền Bắc:** *Chè Shan tuyết Cổ thụ, Cam Hàm Yên, Vải thiều Lục Ngạn, Gạo Séng Cù...*
 
 ### Điểm nhấn giải pháp:
 - **Mô hình 4 vai trò độc lập:** Phân định rạch ròi giữa *Khách hàng*, *Nhà vườn hợp tác*, *Nhân viên canh gác kiểm duyệt* và *Quản trị viên tối cao*.
-- **Truy xuất nguồn gốc:** Liên kết trực tiếp thông tin Hợp tác xã, nhà vườn và mã số vùng trồng.
-- **Phân loại vùng miền & Chuẩn OCOP:** Bộ lọc thông minh theo cấp bậc sao OCOP và bản đồ nông sản vùng miền.
+- **Truy xuất nguồn gốc & Bản đồ OCOP 3 miền:** Liên kết trực tiếp thông tin Hợp tác xã, nhà vườn, chứng nhận OCOP và bộ lọc theo vùng miền Bắc - Trung - Nam.
 - **Nông sản mùa vụ (Seasonal):** Ưu tiên hiển thị và gợi ý nông sản đang vào mùa thu hoạch rộ với giá tốt nhất.
 - **Kiến trúc Client-Server hiện đại:** FrontEnd phát triển bằng **React 19 (Vite SPA)** kết nối BackEnd C# qua **Clean Architecture 4 lớp**, bảo mật **Argon2id + JWT Kép** và cơ chế **Khóa lạc quan (Optimistic Concurrency)** chống bán âm kho.
 
@@ -48,9 +52,12 @@ Dự án áp dụng mô hình phân tách độc lập **Client — Server (Sing
 ```
 ocop-mart-clean-architecture/
 │
+├── .agents/                               # Bộ 9 Agent Skills hỗ trợ đặc tả và phát triển chuẩn GitHub Spec Kit
+├── .specify/                              # Hiến pháp thiết kế dự án (constitution.md) & bộ mẫu đặc tả SDD
+│
 ├── client/                               # [FRONT-END REACT (VITE)] Giao diện SPA hiện đại
 │   ├── src/
-│   │   ├── components/                   # Navbar, Footer, Sidebar, ProtectedRoute
+│   │   ├── components/                   # Navbar, Footer, Sidebar, ProtectedRoute, OcopBadge
 │   │   ├── services/                     # Gọi API C# qua Axios (api.js, authService.js)
 │   │   ├── pages/                        # PHÂN HỆ GIAO DIỆN CỦA 4 VAI TRÒ
 │   │   │   ├── customer/                 # [1. KHÁCH HÀNG] HomePage, ProductDetail, Cart, Checkout
@@ -59,6 +66,7 @@ ocop-mart-clean-architecture/
 │   │   │   └── admin/                    # [4. QUẢN TRỊ VIÊN] AdminDashboard, ManageStaff
 │   │   ├── App.jsx                       # Cấu hình React Router điều hướng 4 vai trò
 │   │   └── main.jsx                      # Điểm khởi chạy React tích hợp Bootstrap 5
+│   ├── UI_DESIGN_GUIDELINES.md           # Hướng dẫn quy tắc thiết kế giao diện UI cho nhóm
 │   └── package.json                      # Quản lý thư viện Front-End bằng npm
 │
 ├── src/                                  # [BACK-END C# (.NET 10)] Clean Architecture 4 Lớp
