@@ -8,10 +8,21 @@
 [![Testing](https://img.shields.io/badge/Testing-xUnit%20%2B%20Moq%20(%E2%89%A550%25)-orange?style=flat&logo=testinglibrary)](https://xunit.net/)
 [![Container](https://img.shields.io/badge/DevOps-Docker%20Compose-2496ED?style=flat&logo=docker)](https://www.docker.com/)
 
-> **Đồ án môn học:** IN4309N04 — Lập trình Web ASPX & Phát triển phần mềm hướng đối tượng (IN4211)  
-> **Đơn vị đào tạo:** Khoa Công nghệ và Kỹ thuật — Trường Đại học Đồng Tháp (DTHU)  
-> **Giảng viên hướng dẫn:** ThS. Trần Kim Hương & ThS. Nguyễn Tuấn Kiệt  
+> **Đồ án môn học:** IN4309N04 — Lập trình Web ASPX  
+> **Đơn vị đào tạo:** Khoa Công nghệ và Kỹ thuật — Trường Đại học Đồng Tháp  
+> **Giảng viên hướng dẫn:** ThS. Trần Kim Hương  
 > **Nhóm thực hiện:** Nhóm 03 — Lớp ĐHCNTT24B-IT  
+
+---
+
+## 📌 TIẾN ĐỘ THỰC HIỆN DỰ ÁN (PROJECT ROADMAP & STATUS)
+
+| Giai đoạn | Nội dung công việc | Trạng thái |
+| :--- | :--- | :---: |
+| **Giai đoạn 1** | **Khởi tạo Bộ khung Solution & Front-End React 4 Vai trò**<br>• Dựng Clean Architecture 4 lớp (.NET 10) + xUnit Test.<br>• Cài đặt gói NuGet: EF Core, Dapper, Argon2id, JWT, FluentValidation, Swagger.<br>• Tạo React 19 (Vite SPA) với 4 phân hệ: Customer, Vendor, Staff, Admin.<br>• Dọn dẹp thư mục `wwwroot` của WebApi, chuẩn bị thư mục lưu ảnh `uploads/`. | ![Done](https://img.shields.io/badge/Status-HOÀN%20THÀNH-success?style=flat) |
+| **Giai đoạn 2** | **Thiết kế Domain Entities & Cơ sở dữ liệu SQL Server (Hiện tại)**<br>• Xây dựng các Entities trong `OcopMart.Domain`: `User`, `Role`, `Producer`, `Product`, `Order`...<br>• Cấu hình Fluent API ánh xạ CSDL trong `OcopMart.Infrastructure`.<br>• Chạy EF Core Migration `InitialCreate` tạo 13 bảng và Seed dữ liệu mẫu OCOP Đồng Tháp.<br>• Xuất file kịch bản `database/script.sql`. | ![In Progress](https://img.shields.io/badge/Status-ĐANG%20THỰC%20HIỆN-blue?style=flat) |
+| **Giai đoạn 3** | **Tầng Nghiệp vụ, Xác thực JWT & Xây dựng RESTful API**<br>• Băm mật khẩu Argon2id, cấp phát JWT Token phân quyền 4 vai trò.<br>• Viết DTOs và FluentValidation độc lập.<br>• Xây dựng API Nông sản (lọc theo sao OCOP, vùng miền), API Giỏ hàng & Đặt hàng Flash Sale chống âm kho (`RowVersion`). | ![Pending](https://img.shields.io/badge/Status-CHỜ%20TRIỂN%20KHAI-lightgrey?style=flat) |
+| **Giai đoạn 4** | **Kết nối React với Web API, Kiểm thử & Đóng gói Báo cáo**<br>• Kết nối giao diện React với API qua Axios, thiết lập Protected Routes.<br>• Viết Unit Test tự động bằng xUnit + Moq (Coverage $\ge 50\%$).<br>• Đóng gói Docker Compose, hoàn thiện Quyển báo cáo Word và Slide PowerPoint bảo vệ. | ![Pending](https://img.shields.io/badge/Status-CHỜ%20TRIỂN%20KHAI-lightgrey?style=flat) |
 
 ---
 
@@ -158,7 +169,7 @@ dotnet test --collect:"XPlat Code Coverage"
 
 ## 🌿 7. QUY CHUẨN ĐÓNG GÓP CODE (GIT & PULL REQUEST WORKFLOW)
 
-Theo quy định học phần **IN4309N04 / IN4211**, nhóm tuân thủ nghiêm ngặt chuẩn **Conventional Commits**:
+Theo quy định học phần **IN4309N04**, nhóm tuân thủ nghiêm ngặt chuẩn **Conventional Commits**:
 
 ### 7.1. Cấu trúc Commit Message:
 
@@ -175,7 +186,7 @@ Theo quy định học phần **IN4309N04 / IN4211**, nhóm tuân thủ nghiêm 
 ### 7.2. Quy trình nhánh (Branching Strategy):
 - `main`: Nhánh chứa mã nguồn sạch, ổn định dùng để báo cáo và demo.
 - `develop`: Nhánh tích hợp mã nguồn chung của cả nhóm.
-- `feat/<ten-tinh-nang>`: Nhánh làm việc riêng của từng thành viên (Ví dụ: `feat/shopping-cart`, `feat/argon2id-auth`).
+- `feat/<ten-tinh-nang>`: Nhánh làm việc riêng của từng thành viên (Ví dụ: `feat/ui-customer-portal`, `feat/backend-auth`).
 - Mọi thay đổi vào nhánh `develop`/`main` bắt buộc phải thông qua **Pull Request (PR)** có mô tả rõ: *(What, Why, How to test)* và được ít nhất 1 thành viên review chấp thuận.
 
 ---
@@ -184,7 +195,7 @@ Theo quy định học phần **IN4309N04 / IN4211**, nhóm tuân thủ nghiêm 
 
 | STT | Mã số SV | Họ và tên | Vai trò | Phân hệ phụ trách chính |
 | :-: | :---: | :--- | :---: | :--- |
-| **1** | `0024417329` | **Nguyễn Huỳnh Phúc Thịnh** *(Leader)* | Backend Lead & Leader | Dựng Clean Architecture, Xác thực JWT + Argon2id, EF Core Migrations, Quản trị Admin Dashboard, Nghiệp vụ Giỏ hàng, Đặt hàng Flash Sale, Tích hợp thanh toán, Unit Test xUnit/Moq và Docker |
+| **1** | `0024417329` | **Nguyễn Huỳnh Phúc Thịnh** *(Team Lead)* | Backend Lead | Dựng Clean Architecture, Xác thực JWT + Argon2id, EF Core Migrations, Quản trị Admin Dashboard, Nghiệp vụ Giỏ hàng, Đặt hàng Flash Sale, Tích hợp thanh toán, Unit Test xUnit/Moq và Docker |
 | **2** | `0024416442` | **Phạm Quốc Bảo** | Frontend & UX | Dựng Master Layout, Giao diện Responsive Bootstrap 5, Danh mục OCOP & Chi tiết sản phẩm, Bộ lọc tìm kiếm |
 | **3** | `0024417853` | **Nguyễn Thành Lộc** | Testing | Hoàn thành tài liệu báo cáo: Tổng hợp phụ lục mã nguồn Word, kịch bản test và video demo. |
 | **4** | `0024419329` | **Phan Thanh Phú** | Testing | Hoàn thành tài liệu báo cáo: Thiết kế Slide PowerPoint báo cáo và kịch bản thuyết trình. |
@@ -193,5 +204,5 @@ Theo quy định học phần **IN4309N04 / IN4211**, nhóm tuân thủ nghiêm 
 
 ## 📜 9. BẢN QUYỀN (LICENSE)
 
-Dự án được phát triển phục vụ mục đích học tập và nghiên cứu trong khuôn khổ học phần **Lập trình Web Aspx (IN4309N04)** & **Phát triển phần mềm hướng đối tượng (IN4211)** tại **Trường Đại học Đồng Tháp**.  
+Dự án được phát triển phục vụ mục đích học tập và nghiên cứu trong khuôn khổ học phần **Lập trình Web Aspx (IN4309N04)** tại **Trường Đại học Đồng Tháp**.  
 Mã nguồn mở phát hành theo giấy phép [MIT License](LICENSE).
