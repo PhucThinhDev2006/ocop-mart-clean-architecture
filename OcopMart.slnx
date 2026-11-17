@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OcopMart.Application/OcopMart.Application.csproj" />
+    <Project Path="src/OcopMart.Domain/OcopMart.Domain.csproj" />
+    <Project Path="src/OcopMart.Infrastructure/OcopMart.Infrastructure.csproj" />
+    <Project Path="src/OcopMart.WebApi/OcopMart.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OcopMart.UnitTests/OcopMart.UnitTests.csproj" />
+  </Folder>
+</Solution>

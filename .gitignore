@@ -399,3 +399,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# IDE temporary folders
+.vs/
+.idea/
+.vscode/
+
+# Build outputs
+[Bb]in/
+[Oo]bj/

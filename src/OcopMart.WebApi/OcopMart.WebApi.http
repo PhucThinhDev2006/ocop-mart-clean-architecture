@@ -1,0 +1,6 @@
+@OcopMart.WebApi_HostAddress = http://localhost:5274
+
+GET {{OcopMart.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
